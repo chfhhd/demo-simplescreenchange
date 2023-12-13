@@ -6,11 +6,14 @@
 |_|  \__,_|\__, |_|_|_.__/|___/\__\__,_|_|   \__\___|_|   
             __/ |                                         
            |___/  
+           
+           
+Simple Screen Change Demo           
 ```
 
-# raylibstarter - minimal edition
+# raylibstarter - Simple Screen Change Demo
 
-[![CMakeBuilds](https://github.com/chfhhd/raylibstarter-minimal/actions/workflows/cmake.yml/badge.svg)](https://github.com/chfhhd/raylibstarter-minimal/actions/workflows/cmake.yml)
+[![CMakeBuilds](https://github.com/chfhhd/demo-simplescreenchange/actions/workflows/cmake.yml/badge.svg)](https://github.com/chfhhd/demo-simplescreenchange/actions/workflows/cmake.yml)
 
 A simple raylib project template for CMake and C/C++
 
