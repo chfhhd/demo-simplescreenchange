@@ -9,10 +9,10 @@ states gamestate = MENU;
 void switchState(states state) {
     switch (gamestate) {
         case MENU:
-            state_menu_init();
+            state_game_init();
             break;
         case GAME:
-            state_game_init();
+            state_menu_init();
             break;
         case GAMEOVER:
             state_gameover_init();
