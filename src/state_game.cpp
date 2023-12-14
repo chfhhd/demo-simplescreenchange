@@ -1,8 +1,15 @@
 #include "state_game.h"
-
 #include "state.h"
 
-void state_menu_init() {
+Vector2 enemies[50];
+Texture2D texture;
+
+void state_game_init() {
+    texture = LoadTexture("assets/graphics/testimage.png");
+    for (int i = 0; i < 50; i++) {
+        enemies[i].x = GetRandomValue(0, GetScreenWidth() - texture.width);
+        enemies[i].y = GetRandomValue(0, GetScreenHeight() - texture.height);
+    }
 
 }
 
@@ -18,13 +25,20 @@ void state_game_draw() {
 
     ClearBackground(WHITE);
 
-    const char *text = "This is the game screen";
+    for (Vector2 element: enemies) {
+        DrawTexture(texture, (int) element.x, (int) element.y, WHITE);
+    }
+
+    //ökjadshfbv aihdsfb
+
+    /*const char *text = "This is the game screen";
     int fontSize = 30;
+
 
     float textWidth = MeasureText(text, fontSize);
     float centerX = (GetScreenWidth() - textWidth) / 2;
 
-    DrawText(text, centerX, 10, fontSize, LIGHTGRAY);
+    DrawText(text, centerX, 10, fontSize, LIGHTGRAY);*/
 
     EndDrawing();
 }

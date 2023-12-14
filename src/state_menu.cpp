@@ -2,7 +2,7 @@
 
 #include "state.h"
 
-void state_game_init() {
+void state_menu_init() {
 
 }
 

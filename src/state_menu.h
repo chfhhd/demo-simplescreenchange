@@ -2,7 +2,7 @@
 
 #include "raylib.h"
 
-void state_menu_init();
+void state_game_init();
 
 void state_menu_update();
 
