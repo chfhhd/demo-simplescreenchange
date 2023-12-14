@@ -1,16 +1,16 @@
 #include "state_game.h"
-#include "raylib.h"
 #include "state.h"
 
 Vector2 enemies[50];
 Texture2D texture;
 
 void state_game_init() {
+    texture = LoadTexture("assets/graphics/testimage.png");
     for (int i = 0; i < 50; i++) {
         enemies[i].x = GetRandomValue(0, GetScreenWidth() - texture.width);
         enemies[i].y = GetRandomValue(0, GetScreenHeight() - texture.height);
     }
-    texture = LoadTexture("assets/graphics/testimage.png");
+
 }
 
 void state_game_update() {
@@ -28,6 +28,8 @@ void state_game_draw() {
     for (Vector2 element: enemies) {
         DrawTexture(texture, (int) element.x, (int) element.y, WHITE);
     }
+
+    //ökjadshfbv aihdsfb
 
     /*const char *text = "This is the game screen";
     int fontSize = 30;
